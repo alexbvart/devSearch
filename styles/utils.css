@@ -1,0 +1,97 @@
+
+/* utils */
+.generic-list-horizontal{
+    display: flex;
+    align-items: center;
+
+    width: auto;
+    height: 24px;
+
+    margin: 12px 0;
+}
+
+.generic-list-horizontal > li{
+    padding-right: 12px;
+}
+.generic-list-horizontal li a img:hover{
+    width: 48px;
+    transition: all 20s ease-out;
+
+}
+
+.img-cicle-56{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+}
+
+
+.ml-36{
+    margin-left: 3.6rem;
+}
+.mt-40{
+    margin-top: 4rem
+}
+.mt-20{
+    margin-top: 2rem
+}
+.d-flex{
+    display: flex;
+}
+.d-flex-y{
+    display: flex;
+    align-items: center;
+}
+
+/* Poscicionamiento de centrado */
+.center{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icons{
+    margin-top: 72px;
+}
+
+
+
+/* titulos de la pagina */
+.title-page{
+    font-style: normal;
+    font-weight: 500;
+    font-size: var(--titles);
+    line-height: 1.8rem;
+    color: var(--off-white);
+    padding: 48px 0;
+}
+
+.title-page--right{
+    text-align: right;
+}
+
+
+
+/* text */
+
+.call-to-action-text{
+    color: var(--action);
+}
+
+.bigTitle{
+    font-style: normal;
+    font-weight: 900;
+    font-size: var(--bigtitles);
+    line-height: 8.8rem;
+    padding: 60px 0;
+}
+
+@media (max-width: 600px) { /* Menor a 600 */
+
+    .bigTitle{
+        line-height: 5.3rem;
+        padding: 24px 0;
+    }
+}
