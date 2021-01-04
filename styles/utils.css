@@ -88,10 +88,18 @@
     padding: 60px 0;
 }
 
+
+.h-100{
+    min-height: calc(100vh - var(--header-height));
+    display: flex;
+    align-items: center;
+}
+
 @media (max-width: 600px) { /* Menor a 600 */
 
     .bigTitle{
         line-height: 5.3rem;
         padding: 24px 0;
     }
+
 }

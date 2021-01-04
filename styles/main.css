@@ -6,8 +6,8 @@
   --pading-inferior: 4.8rem;
   width: 90%;
   margin: auto;
-  padding-bottom: var(--pading-inferior);
-
+/*   padding-bottom: var(--pading-inferior);
+ */
   overflow: hidden;
 }
 
@@ -31,7 +31,7 @@
   background-image: url(../assets/svg/logo.svg);
 }
 
-@media (max-width: 600px) {  /* Mayor a 600  */
+@media (max-width: 700px) {  /* Mayor a 600  */
   .main{
     width: 100%;
   }
