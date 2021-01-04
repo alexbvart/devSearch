@@ -29,8 +29,9 @@ Agregando estilos:
 /*     --background-black: var(--just-white);
     --off-white: #DBDBDB;*/
     --just-white: #fff; 
-    --action: rgb(255, 192, 203);
     --greengh: #3CC74A;
+    /* --action: rgb(255, 192, 203); */
+    --action:var(--greengh);
 
     --swiper-theme-color: var(--action) !important;
 
@@ -104,6 +105,13 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+@import "header";
+@import"aboutme";
+@import"fetch";
+@import"icon-menu";
+@import"popup";
+@import"utils";
+@import"main";
 
 @media (max-width: 600px) { /* Menor a 600 */
 

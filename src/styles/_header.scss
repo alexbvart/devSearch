@@ -4,8 +4,8 @@
 
 
 .header{
-    /* position: sticky; */
-    position: fixed;
+    position: sticky;
+    /* position: fixed; */
     top: -88px;
     z-index: 100;
 
@@ -60,7 +60,7 @@
         margin-left: 24px; 
         width: 189px;
         height: 36px; 
-        background-image: url(../assets/svg/minilogo.svg);
+        /* background-image: url(./assets/svg/minilogo.svg); */
     }
     .header .header__list{
 
@@ -76,7 +76,7 @@
         margin-left: 5vw;  
         width: 240px;
         height: 36px;
-        background-image: url(../assets/svg/biglogo.svg);
+        /* background-image: url(./assets/svg/biglogo.svg); */
     }
     .header .header__list{
 

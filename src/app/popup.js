@@ -23,7 +23,7 @@ input.addEventListener('click',function(){
     popup.classList.toggle('active');
 });
 
-
+console.log("pop");
 /* Seleccionar alguna de la secciones del menu */
 /* document.getElementById('poppup__item__input').forEach(btn => {
     btn.addEventListener('click', e => {

@@ -9,29 +9,34 @@
     <meta property="fb:admins" content="100015089536438" />
     <link rel="shortcut icon" type="image/png" href="./assets/png/favicon.png">
 
-    <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/utils.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/aboutme.css">
-    <link rel="stylesheet" href="./styles/icon-menu.css">
-    <link rel="stylesheet" href="./styles/popup.css">
-    <link rel="stylesheet" href="./styles/fetch.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
-
+    <link     rel="stylesheet"     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
 </head>
-<body>
+<body >
     <header class="header" id=headerContent>
-        <a href="#welcome" class="header__logo">
-            <!-- <img src="./assets/svg/biglogo.svg" alt="Logo GITHUB SEARCH"> -->
+        <a href="#" class="header__logo" id="placeTheLogoHere">
+            <!-- <img src="./assets/svg/biglogo.svg" alt="Logo GITHUB SEARCH">  -->
         </a>    
         <nav>
             <ul class="header__list">
                 <li>
-                    <a href="#" class="d-flex">
-                        <input type="search" name="" id="" class="searchInput" placeholder="@alexbvart">
-                        <input type="submit" name="" id="" value="Search" class="searchSubmit ">  
+                    <a href="#" class="d-flex-y">
+                        <form id="userFormHeader">
+                            <input 
+                                type="search" name="" 
+                                id="textSearchHeader" 
+                                class="searchInput searchInput__header" 
+                                placeholder="@alexbvart" 
+                                autofocus
+                            >
+                            <input 
+                                type="submit"                             
+                                value="Search" 
+                                class="searchSubmit searchSubmit__header"
+                            >  
+                        </form>
                     
                     </a>
                 </li>
@@ -41,7 +46,6 @@
             </ul> 
         </nav>  
     </header>
-
 
 
     <section class="main main--margin24 h-100" >
@@ -57,25 +61,34 @@
             <div class="main-about-me__image-container">
 
                     <div class="getStarted getStarted-title  ">
-                        <img src="assets/svg/iconGetStarted.svg" alt="icon getStarted">
+                        <img src="./assets/svg/iconGetStarted.svg" alt="icon getStarted">
                         <h2 class="ml-36">Get started</h2>
                     </div>
-                    <ul>
-                        <li class="getStarted mt-40">
-                            <img src="assets/svg/circleList.svg" alt="icon list">
-                            <div class="ml-36">
-                                <span>Filter by user name</span>
-                                <input type="search" name="" id="" class="searchInput" placeholder="@alexbvart">
+                    <form id="userFormPage">
+                        
+                        <ul>
+                            <li class="getStarted mt-40">
+                                <img src="assets/svg/circleList.svg" alt="icon list">
+                                <div class="ml-36">
+                                    <span>Filter by user name</span>
+                                    <input 
+                                        type="search" 
+                                        id="textSearchPage" 
+                                        name="" 
+                                        class="searchInput" 
+                                        placeholder="@alexbvart"
+                                    >
                             </div>
-                        </li>
-                        <li class="getStarted mt-40">
-                            <img src="assets/svg/circleList.svg" alt="icon list">
-                            <div class="ml-36">
-                                <span>Find it</span> <br>
-                                <input type="submit" name="" id="" value="Search" class="searchSubmit searchSubmit__list">  
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="getStarted mt-40">
+                                <img src="assets/svg/circleList.svg" alt="icon list">
+                                <div class="ml-36">
+                                    <span>Find it</span> <br>
+                                    <input type="submit" value="Search" class="searchSubmit searchSubmit__list">  
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
                     
 
             </div>
@@ -94,9 +107,9 @@
             <div class="fetch-profile "> 
                 <figure class="profileUser ">
 
-                    <img src="assets/svg/ciculos.svg" alt="" class="profileUser--img-back">
+                    <img src="assets/svg/circulos.svg" alt="" class="profileUser--img-back">
 
-                    <figcaption class="d-flex-y">
+                    <figcaption class="d-flex-y ">
                         <div class="profileImage ">
                             <img src="https://avatars2.githubusercontent.com/u/52339437?s=460&u=b6109a8f436373ca646f9373be6f7830c2d535c8&v=4" 
                                 alt="foto de perfil de github" class="img-cicle-56">
@@ -233,11 +246,8 @@
     </div>
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
 
-    <script src="js/popup.js"></script>
-    <script src="js/header.js"></script>
  
 </body>
 </html>
