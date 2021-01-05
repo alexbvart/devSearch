@@ -40,9 +40,13 @@ class UI {
             
         </div>
         `;
+        this.clearMessage();
+
     }
 
     showMessage(message,cssclass){
+        this.clearMessage();
+
         const div = document.createElement('div');
         div.className=cssclass;
         div.appendChild(document.createTextNode(message));
@@ -50,6 +54,11 @@ class UI {
         const fetchContent = document.querySelector('.fetch');
 
         content.insertBefore(div, fetchContent);
+    }
+    clearMessage(){
+        document.querySelectorAll('.alert').forEach( alert =>{
+            alert.remove();
+        })
     }
 
 }
