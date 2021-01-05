@@ -60,7 +60,7 @@ Agregando estilos:
     --color41: #182834;
     --color42: #FDDB26;
     --color5: #D2FAFA;
-    --color6: #FF5D68;
+    --color6: #ff5d6823;
     --numero-de-proyectos-presentados: 10
 
 }
@@ -82,12 +82,16 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--just-white);
+    color: var(--green-black);
 }
 /* a:visited, */
 a:focus,
 a:hover,
-a:active {color: var(--action);}  /* selected link */
+a:active {
+    /* color: var(--action); */
+    color: var(--green-black);
+
+}  /* selected link */
 
 ul{
     list-style:none;

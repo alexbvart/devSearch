@@ -28,6 +28,10 @@
     left: 184px;
     top: 100px;
 }
+.profileUser figcaption .userNameH1{
+    /* background-color: red; */
+    min-width: 300px;
+}
 
 
 .scoreData-wraper{
@@ -110,6 +114,13 @@
     background-color: var(--color1);
 }
 
+.alert{
+    width: auto;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    background-color: var(--color6);
+
+}
 
 @media (min-width: 670px) { /* Mayor a 600 */
 
