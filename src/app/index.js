@@ -21,13 +21,13 @@ function getTheInputData(textSearc) {
         github.fetchUser(textSearc) //realizamos la peticion y se retornan los datos
             .then(data=>
                 {
-                    if (data.message === 'Not Found') {
+                    if (data.userData.message === 'Not Found') {
                         /* console.log("User not exisits"); */
                         ui.showMessage('User not found','alert' );
                         /* document.getElementById("homeSection").style.display = "block"; */
 
                     }else{
-                        ui.showProfile(data);
+                        ui.showProfile(data.userData);
                         
                         document.getElementById("homeSection").style.display = "none";
                     }
