@@ -2,9 +2,9 @@ class UI {
     constructor() {
         this.profile = document.getElementById('profile')
     }
-    showProfile(user){
-        this.profile.innerHTML= 
-        `
+    showProfile(user) {
+        this.profile.innerHTML =
+            `
         <figure class="profileUser ">
 
             <img src="assets/svg/circulos.svg" alt="circulos que decoran el background de la foto de perfil" class="profileUser--img-back">
@@ -44,22 +44,42 @@ class UI {
 
     }
 
-    showMessage(message,cssclass){
+    showMessage(message, cssclass) {
         this.clearMessage();
 
         const div = document.createElement('div');
-        div.className=cssclass;
+        div.className = cssclass;
         div.appendChild(document.createTextNode(message));
         const content = document.getElementById('mainRequest');
         const fetchContent = document.querySelector('.fetch');
 
         content.insertBefore(div, fetchContent);
     }
-    clearMessage(){
-        document.querySelectorAll('.alert').forEach( alert =>{
+    clearMessage() {
+        document.querySelectorAll('.alert').forEach(alert => {
             alert.remove();
         })
     }
 
+    showRepositories(repositories) {
+        let template = "";
+
+        repositories.forEach(repo=>{
+            template += `
+            <li class="cardProyect">
+                <h2>${repo.name} </h2>                        
+                <div class="detailsOfProyect d-flex-y mt-20">
+                    <span class="language language-color">${repo.language} </span>
+                    <div class="fork ml-36">
+                        <img src="assets/svg/fork.svg" alt=""> ${repo.forks_count}
+                    </div>
+                </div>
+            </li>
+        `;
+        })
+
+        document.getElementById('repositories').innerHTML= template;
+    }
+
 }
-module.exports= UI;
+module.exports = UI;

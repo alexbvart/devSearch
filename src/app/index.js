@@ -25,9 +25,10 @@ function getTheInputData(textSearc) {
                         /* console.log("User not exisits"); */
                         ui.showMessage('User not found','alert' );
                         /* document.getElementById("homeSection").style.display = "block"; */
-
+                        
                     }else{
                         ui.showProfile(data.userData);
+                        ui.showRepositories(data.repositories);
                         
                         document.getElementById("homeSection").style.display = "none";
                     }
