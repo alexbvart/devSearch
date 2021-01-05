@@ -61,15 +61,67 @@ class UI {
         })
     }
 
+    colorForLanguage(language) {
+        var colorForLanguageExport="";
+        switch (language) {
+    
+            case 'JavaScript':
+                colorForLanguageExport = "#F8EFBE" ;
+                console.log(`lenguaje: ${language}, color ${colorForLanguageExport}`);
+                break;
+            case 'PHP':
+                colorForLanguageExport =  "#E0DAF1";
+                break;
+            case 'SCSS':
+                colorForLanguageExport =  "#EEDAF1";
+                break;
+            case 'CSS':
+                colorForLanguageExport =  "#EEDAF1";
+                break;
+            case 'Java':
+                colorForLanguageExport =  "#F1DADA";
+                break;
+            case 'Python':
+                colorForLanguageExport =  "#DAF1EE";
+                break;
+            case 'Go':
+                colorForLanguageExport =  "#BEF4F8";
+                break;
+        
+            case 'HTML':
+                colorForLanguageExport =  "#F8BEBE";
+                break;
+        
+            case 'TypeScript':
+                colorForLanguageExport =  "#BEEDF8";
+                break;
+        
+            case 'C':
+                colorForLanguageExport =  "#F8BED6";
+                break;
+            case 'C#':
+                colorForLanguageExport =  "#F8BED6";
+                break;
+        
+            default:
+                colorForLanguageExport =  "#E7E7E7"
+                break;
+        }
+        return colorForLanguageExport
+    }
+
     showRepositories(repositories) {
         let template = "";
 
         repositories.forEach(repo=>{
+
+            console.log(repo.language);
+            let color = this.colorForLanguage(repo.language);
             template += `
             <li class="cardProyect">
                 <h2>${repo.name} </h2>                        
                 <div class="detailsOfProyect d-flex-y mt-20">
-                    <span class="language language-color">${repo.language} </span>
+                    <span class="language " style="background-color:${color};"  >${repo.language} </span>
                     <div class="fork ml-36">
                         <img src="assets/svg/fork.svg" alt=""> ${repo.forks_count}
                     </div>
