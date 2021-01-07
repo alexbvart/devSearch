@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeply": "npm run build",
-    "deply": "gh-pages -d dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": " rimraf dist && webpack --mode production",
     "start": "webpack serve --mode development"
   },
