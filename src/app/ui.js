@@ -81,6 +81,12 @@ class UI {
             case 'Java':
                 colorForLanguageExport =  "#F1DADA";
                 break;
+            case 'Clojure':
+                colorForLanguageExport =  "#fae2d2";
+                break;
+            case 'Shell':
+                colorForLanguageExport =  "#e2fad2";
+                break;
             case 'Python':
                 colorForLanguageExport =  "#DAF1EE";
                 break;
